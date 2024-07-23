@@ -1,0 +1,50 @@
+@import '/src/ui/styles/color-variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-black;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-and-call-wrapper {
+        height: 31.37rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        p {
+            max-width: 35rem;
+            font-family: 'Inter', sans-serif;
+            color: $primary-white;
+            font-size: 2rem;
+            text-align: center;
+
+            b {
+                color: $primary-red;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .code-lines-vector {
+        position: absolute;
+        top: 15%;
+        right: 10%;
+    }
+    .network-vector {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .points-vector {
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+    }
+}
