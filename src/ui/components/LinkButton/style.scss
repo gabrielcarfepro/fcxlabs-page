@@ -1,0 +1,27 @@
+@import '/src/ui/styles/color-variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.link-btn {
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    border: $primary-red solid 3px;
+    cursor: pointer;
+    transition: .3s;
+    
+    a {
+        text-decoration: none;
+        color: $primary-red;
+        transition: .3s;
+    }
+
+    &:hover {
+        background-color: $primary-red;
+
+        a {
+            color: $primary-white;
+        }
+    }
+}

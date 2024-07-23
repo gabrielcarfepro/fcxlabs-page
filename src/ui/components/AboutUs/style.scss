@@ -1,0 +1,74 @@
+@import '/src/ui/styles/color-variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.mainn-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: $primary-black;
+
+    .image-frame-container {
+        position: absolute;
+        right: 14%;
+        top: 4%;
+        .image-frame-wrapper {
+            position: relative;
+    
+            img {
+                width: 39.18rem;
+            }
+    
+            svg {
+                position: absolute;
+                left: -4rem;
+                top: -3rem;
+            }
+        }
+    }
+
+    .text-button-container {
+        position: absolute;
+        left: 14%;
+        bottom: 11.5%;
+
+        .text-button-wrapper {
+            width: 52.43rem;
+            min-height: 22rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            
+            p {
+                color: $primary-white;
+                text-align: justify;
+                font-size: 1.65rem;
+                
+                b {
+                    color: $primary-red;
+                    font-weight: bold;
+                }
+            }
+    
+            svg {
+                position: absolute;
+                top: -2rem;
+                right: -2.5rem;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .code-lines-vector {
+        position: absolute;
+        top: 8%;
+        left: 24%;
+    }
+    .grey-void-bars {
+        position: absolute;
+        bottom: 20%;
+        left: 8%;
+    }
+
+}
